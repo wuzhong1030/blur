@@ -1,61 +1,64 @@
-*{
-	padding:0;
-	margin:0;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-.container{
+.container {
 	margin: 0 auto;
 	position: relative;
-	overflow:hidden;
+	overflow: hidden;
 }
-.container > img{
-	display:block;
-    margin:0 auto;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-	filter:blur(20px);
+
+.container>img {
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	filter: blur(20px);
 	-webkit-filter: blur(20px);
 	-moz-filter: blur(20px);
 	-ms-filter: blur(20px);
 	-o-filter: blur(20px);
-
 	z-index: 0;
 }
-.container > canvas{
-	display:block;
-    margin:0 auto;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 100;
-    
-}
-.button{
+
+.container>canvas {
+	display: block;
+	margin: 0 auto;
 	position: absolute;
-	width: 120px;
-	height: 30px;
-	line-height: 30px;
-	border-radius: 5px;
+	left: 0px;
+	top: 0px;
+	z-index: 100;
+}
+
+.button {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
 	color: #fff;
+	border: none;
 	text-decoration: none;
 	text-align: center;
 	z-index: 200;
-	border: none;
 }
-.button.reset{
-	left: 10px;
+
+.button.reset {
+	left: 30px;
 	bottom: 40px;
-	background: #058;
+	color: #2883a2;
+	text-shadow: 0 1px 0 #9cdef2;
+	border-color: #4397b3;
+	background-color: #55c1e5;
 }
-.button.reset:hover{
-	background: #047;
-}
-.button.show{
-	right: 10px;
+
+.button.show {
+	right: 30px;
 	bottom: 40px;
-	background: #085;
-}
-.button.show:hover{
-	background: #074;
+	color: #ab8228;
+	text-shadow: 0 1px 0 #ffe199;
+	border-color: #b08f3e;
+	background-color: #f8c64d;
 }
