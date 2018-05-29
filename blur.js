@@ -7,19 +7,21 @@ var canvasWidth = window.innerWidth,
   img = new Image(),
   resetBtn = document.getElementsByClassName("reset")[0],
   showBtn = document.getElementsByClassName("show")[0],
-  container = document.getElementsByClassName("container")[0];
-(image = document.getElementsByTagName("img")[0]),
-  (leftMargin = 0),
-  (topMargin = 0),
-  (theLeft = 0),
-  (theTop = 0),
-  (imgArr = ["./img/1.jpg", "./img/2.jpg", "./img/3.jpg", "./img/4.jpg"]);
+  container = document.getElementsByClassName("container")[0],
+  image = document.getElementsByTagName("img")[0],
+  leftMargin = 0,
+  topMargin = 0,
+  theLeft = 0,
+  theTop = 0,
+  imgArr = ["./img/1.jpg", "./img/2.jpg", "./img/3.jpg", "./img/4.jpg"];
 
 canvas.width = canvasWidth;
 canvas.height = canvasHeiht;
 canvas.addEventListener("touchstart", function(e) {
   e.preventDefault();
 });
+
+//随机取出一张图片
 image.src = img.src = imgArr[parseInt(Math.random() * imgArr.length)];
 img.onload = function() {
   container.style.width = canvasWidth + "px";
